@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Hearth & Rye</title>
+<meta name="description" content="Visit Hearth & Rye, get directions, hours, and send us a message.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Karla:wght@400;500;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Hearth <span>&amp;</span> Rye</a>
+    <nav class="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section style="padding-bottom: 20px;">
+    <div class="wrap">
+      <span class="script">Come by</span>
+      <h1 style="font-size: clamp(2.2rem, 4vw, 3rem);">Find us on Miller Street</h1>
+      <p style="max-width: 60ch;">We're a short walk from the Riverside Market, next to the hardware store with the green awning. There's a small seating area inside and two tables out front.</p>
+    </div>
+  </section>
+
+  <section style="padding-top: 10px;">
+    <div class="wrap contact-grid">
+
+      <div>
+        <dl class="contact-details">
+          <dt>Address</dt>
+          <dd>214 Miller Street<br>Riverside District</dd>
+
+          <dt>Hours</dt>
+          <dd>Mon – Fri: 7:00am – 5:00pm<br>Sat – Sun: 7:30am – 3:00pm</dd>
+
+          <dt>Phone</dt>
+          <dd>(555) 019-2847</dd>
+
+          <dt>Email</dt>
+          <dd>hello@hearthandrye.example</dd>
+        </dl>
+
+        <div style="margin-top: 36px;">
+          <h3>Send us a note</h3>
+          <form class="contact-form" onsubmit="return handleContactSubmit(event)">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send message</button>
+            <p id="form-status" role="status" style="margin-top: 4px;"></p>
+          </form>
+        </div>
+      </div>
+
+      <div>
+        <iframe
+          class="map-frame"
+          title="Map to Hearth & Rye"
+          src="https://www.google.com/maps?q=Riverside%20District&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <a href="index.html" class="logo">Hearth &amp; Rye</a>
+      <p style="margin-top:10px; max-width: 32ch;">214 Miller Street, Riverside District</p>
+    </div>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    &copy; 2026 Hearth & Rye Bakery &amp; Cafe. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  // Placeholder handler — this form has no backend yet.
+  // See README.md for how to connect it to a real form service (e.g. Formspree, Netlify Forms).
+  function handleContactSubmit(event){
+    event.preventDefault();
+    document.getElementById('form-status').textContent =
+      "This form isn't connected yet — see the README for how to hook it up to a service like Formspree.";
+    return false;
+  }
+</script>
+
+</body>
+</html>
