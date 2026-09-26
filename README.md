@@ -1,4 +1,4 @@
-# Hearth & Rye — Cafe & Bakery Website
+# Golden Cafe Website
 
 A 4-page static site (Home, Menu, About, Contact) built with plain HTML/CSS — no build tools, no frameworks. Ready to push straight to GitHub Pages.
 
@@ -18,7 +18,7 @@ hearth-and-rye/
 
 Everything is placeholder text using a fictional bakery, **Hearth & Rye**, at 214 Miller Street. Before publishing, search-and-replace in every `.html` file:
 
-- Business name: `Hearth & Rye`
+- Business name: `Golden Cafe`
 - Address / phone / email in `contact.html`
 - Hours (appear on `index.html`, `contact.html`)
 - Menu items and prices in `menu.html`
