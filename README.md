@@ -1,4 +1,5 @@
 # Golden Cafe Website
+https://sanjayk-math.github.io/Cafe-website/
 
 A 4-page static site (Home, Menu, About, Contact) built with plain HTML/CSS — no build tools, no frameworks. Ready to push straight to GitHub Pages.
 
